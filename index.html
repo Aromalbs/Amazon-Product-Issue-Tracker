@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+    <meta name="author" content="Aromal B S">
+    <title>Amazon Product Issue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Tab Icon-->
+    <link rel="shortcut icon" href="img\297-2971739_icon-amazon-logo-png.png">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Bootstrap\bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     </head>
+    <!--Body-->
+  
+    <main>
+      <body onload="fetchIssues()">
+        <div class="container">
+        <div class="container">
+          <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        <a href="javascript:void();" target="_blank">[Project-1] - The Complete JavaScript Application: Build a Real-World Project</a></b> I made this project completly using JavaScript -- Iam just starting to learn Web developement.-- This project is not completly my idea I  just Saw this on a tutorial and Iam just trying to recreate it of my own.--
+       </div>
+       
+     </div>
+       <h1 class="page-header">Amazon Product Issue Tracker<small> by Aromal B S</small></h1>
+        <div class="jumbotron">
+        <h3>Add New Issue:</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueProductname">Product Name & Model</label>
+            <input type="text" class="form-control" id="issueProductname" placeholder="Name of the product">
+          </div>
+        
+          <div class="form-group">
+            <label for="issueDescInput">Description</label>
+            <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
+          </div>
+      
+          <div class="form-group">
+            <label for="issueSeverityInput">Severity</label>
+            <select id="issueSeverityInput" class="form-control">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+        
+          <div class="form-group">
+            <label for="issueAssignedToInput">Assigned To</label>
+            <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ...">
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Add</button>
+        </form>
+      </div>
+    
+      <div class="col-lg-12">
+        <div id="issuesList">
+        </div>
+      </div>
+    
+      <div class="footer">
+        <p>&copy <a href="#" onclick="yourFunction(); return false" target="_blank">Aromal B S</a> <a href="github" target="_blank"></a></p>
+      </div>
+    </div>
+    
+    <script src="chance.js"></script>
+    <script src="https://chancejs.com/chance.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </main>
+  </body>
+</html>
